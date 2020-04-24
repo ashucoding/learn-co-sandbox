@@ -6,7 +6,7 @@ class TrendingFoods::CLI
   end
   
   def list_trending_foods
-    puts "trending foods"
+    puts "Trending Foods"
     @trending_foods = TrendingFoods::TrendingFood.latest 
     @trending_foods.each.with_index(1) do |food,index|
       puts "#{index}. #{food.title}"

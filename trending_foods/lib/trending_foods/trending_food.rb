@@ -10,6 +10,7 @@ class TrendingFoods::TrendingFood
     
     doc= Nokogiri::HTML(open(URL))
     food_nodes = doc.css(".w-cms-richtext")
+    food_nodes.shift
     food_nodes.each do |food_node|
       food = self.new 
       food.title = food_node.css("p")[0].text.split(". ")[1]
