@@ -1,0 +1,3 @@
+class TrendingFoods::TrendingFood 
+  
+end
