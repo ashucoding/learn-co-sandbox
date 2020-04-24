@@ -1,3 +1,0 @@
-#!/usr/bin/env ruby
-
-TrendingFoods:CLI.new.call
