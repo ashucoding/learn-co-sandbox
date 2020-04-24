@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-
+require "bundler/setup"
+require "trending_foods"
 TrendingFoods::CLI.new.call
 
-require "../lib"
