@@ -1,3 +1,7 @@
+require "nokogiri"
+require "byebug"
+require "open-uri"
+
 require_relative "./trending_foods/version"
 require_relative "./trending_foods/cli"
 require_relative "./trending_foods/trending_food"
