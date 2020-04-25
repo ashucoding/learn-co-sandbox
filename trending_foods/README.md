@@ -1,8 +1,6 @@
 # TrendingFoods
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/trending_foods`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+ Gem application is designed to list the top trending foods of 2020 as published by the franchised grocer Whole Foods. The Gem allows user to see the entire list, then prompt for a number, so that the user can see more information about the food and trend. The Gem is run on an infinite loop, so user has can choose as many foods as they want without exiting the application. Once the user exit the application they will be taken back to the directory file.
 
 ## Installation
 
@@ -22,7 +20,16 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+INSTRUCTIONS ON HOW TO EXECUTE
+1 Tap into the Project Directory: cd./trending_foods
+2 Install the game. by typing bundle install
+3 Execute Game prompt by running the controller folder ./bin/controller
+4 A list of 10 trending foods will appear and instructions.
+5 Enter the number of the food you would like to get more information about. 
+6 Information about the food will appear. Then instruction to pick another food or exit.
+7 The program is on a loop. So if you choose an unrecognized number or choose not to exit it will keep prompting you for a food number.
+8 When done enter exit. 
+9 To leave directory cd ..
 
 ## Development
 

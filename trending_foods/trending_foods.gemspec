@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["'Shana Wiltshire'"]
   spec.email         = ["'shanawiltshire@gmail.com'"]
 
-  spec.summary       = %q{Write a short summary, because RubyGems requires one.}
+  spec.summary       = %q{"This application allows users to see the top 10 trending foods of 2020."}
   spec.description   = %q{Write a longer description or delete this line.}
-  #spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/ashucoding/learn-co-sandbox/tree/master/trending_foods."
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
