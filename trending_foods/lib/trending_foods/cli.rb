@@ -12,10 +12,7 @@ class TrendingFoods::CLI
   
   def list_trending_foods
     puts "\nTrending Foods"
-   # @trending_foods = TrendingFoods::TrendingFood.latest 
-   if (@trending_foods == nil)
-     @trending_foods = TrendingFoods::TrendingFood.latest
-   end
+   @trending_foods = TrendingFoods::TrendingFood.latest 
     @trending_foods.each.with_index(1) do |food,index|
       puts "#{index}. #{food.title}"
     end 
