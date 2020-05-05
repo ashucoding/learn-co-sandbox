@@ -1,13 +1,21 @@
 class TrendingFoods::CLI 
   
   def call 
+    greeting
    list_trending_foods
    menu 
   end
   
+  def greeting
+    puts "Welcome to Whole Foods' Top 10 Trending Foods of 2020! \nPlease enter a trending food number to learn more about this fascinating food."
+  end
+  
   def list_trending_foods
-    puts "Trending Foods"
-    @trending_foods = TrendingFoods::TrendingFood.latest 
+    puts "\nTrending Foods"
+   # @trending_foods = TrendingFoods::TrendingFood.latest 
+   if (@trending_foods == nil)
+     @trending_foods = TrendingFoods::TrendingFood.latest
+   end
     @trending_foods.each.with_index(1) do |food,index|
       puts "#{index}. #{food.title}"
     end 
