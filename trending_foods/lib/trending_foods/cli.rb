@@ -20,7 +20,7 @@ end
 def menu
   input = nil 
   while input != "exit"
-    puts "Enter the number of the trending foods you would like more information about or Enter exit"
+    puts "Enter the number of the trending foods you would like more information about.\nType 'exit' to leave.\nType 'list' to redisplay list."
     input = gets.strip.downcase
     if input.to_i > 0 and input.to_i <= @trending_foods.length 
       index = input.to_i - 1
